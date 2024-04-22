@@ -28,13 +28,13 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const galleryEl = document.querySelector('.gallery');
 
-const markup = images.map((image) => 
-  `<li class="gallary-item">
+const markupEl = images.map((image) => 
+  `<li class="gallery-item">
     <img width="300" height="auto" src="${image.url} alt="${image.alt}">
 </li>`).join('');
 
-gallery.insertAdjacentHTML('beforeend', markup);
+galleryEl.insertAdjacentHTML('beforeend', markupEl);
 
-console.log(markup);
+console.log(markupEl);
